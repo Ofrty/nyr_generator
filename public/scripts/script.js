@@ -128,8 +128,8 @@ var c =
 		"plural": "Five Dollar Shakes"
 	},
 	{
-		"sing": "insurancy policy",
-		"plural": "insurancy policies"
+		"sing": "insurance policy",
+		"plural": "insurance policies"
 	},
 	{
 		"sing": "Usain Bolt",

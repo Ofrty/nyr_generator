@@ -1,10 +1,11 @@
 body
 {
   background-image: url("../nyr_background.jpg");
-  background-position: center;
+  background-position: top;
   text-align: center;
   font-family: Georgia;
   font-weight: bold;
+  margin-top: 33.3vh;
 }
 
 #res

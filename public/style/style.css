@@ -1,6 +1,6 @@
 body
 {
-  background: white;
+  background-image: url("public/nyr_background.jpg");
   text-align: center;
   font-family: Georgia;
   font-weight: bold;
@@ -8,7 +8,7 @@ body
 
 #res
 {
-  font-size: 18pt;
+  font-size: 18pt; 
 }
 
 #regen

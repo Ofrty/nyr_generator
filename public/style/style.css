@@ -1,6 +1,7 @@
 body
 {
   background-image: url("../nyr_background.jpg");
+  background-position: center;
   text-align: center;
   font-family: Georgia;
   font-weight: bold;
@@ -8,6 +9,11 @@ body
 
 #res
 {
+  width: 33%;
+  margin: auto;
+  background slategray;
+  opacity: 0.25;
+  color: whitesmoke;
   font-size: 18pt; 
 }
 

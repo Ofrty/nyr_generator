@@ -1,0 +1,17 @@
+body
+{
+  background: white;
+  text-align: center;
+  font-family: Georgia;
+  font-weight: bold;
+}
+
+#res
+{
+  font-size: 18pt;
+}
+
+#regen
+{
+  font-size: 14pt;
+}

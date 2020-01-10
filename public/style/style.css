@@ -1,6 +1,6 @@
 body
 {
-  background-image: url("/public/nyr_background.jpg");
+  background-image: url("../nyr_background.jpg");
   text-align: center;
   font-family: Georgia;
   font-weight: bold;

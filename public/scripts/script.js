@@ -1,3 +1,7 @@
+// chance vars: 1 / (val+1) chance
+var notDenom = 3; // chance of "will" -> "will not"
+var valDDenom = 2; // chance of final clause val D being applied
+
 // source lists
 var a =
 [
@@ -34,7 +38,9 @@ var a =
 	"exsanguinate",
 	"embalm",
 	"interpret",
-	"annotate"
+	"annotate",
+	"build an exact replica of",
+	"pay my respects to"
 ];
 
 var b =
@@ -109,11 +115,27 @@ var b =
 	},
 	{
 		"val": "the",
-		"pluralInd": false
+		"pluralInd": false // the avocado tree
 	},
 	{
 		"val": "the",
+		"pluralInd": true // the avocado trees
+	},
+	{
+		"val": "our entire supply of",
 		"pluralInd": true
+	},
+	{
+		"val": "all",
+		"pluralInd": true
+	},
+	{
+		"val": "your favorite",
+		"pluralInd": false
+	},
+	{
+		"val": "the last unaccounted-for",
+		"pluralInd": false
 	}
 ];
 
@@ -230,7 +252,20 @@ var d =
 	"while blindfolded",
 	", for kingdom and glory",
 	"wherever I please",
-	"while moving uphill both ways"
+	"while moving uphill both ways",
+	"in a cloud-based environment",
+	"with the aid of my sidekick",
+	"whether you like it or not",
+	"so well that Kim will write a song about it",
+	"and then take an apprentice",
+	", and stream it live for the world to see"
+	"so that no one else ever has to",
+	", just in case",
+	"without regard for my own safety",
+	"to raise money for charity",
+	"in the name of Odin",
+	", and I won't shave until it's finished",
+	"as a proxy for my greater ambitions"
 ];
 
 //  funcs
@@ -253,13 +288,12 @@ returns: nothing
 */
 {
 	// pos or neg. 1/notDenom chance.
-	var notDenom = 3; // set chance of not
 	var yoda;
 	if (randBetween(notDenom - 1) == (notDenom - 1))
 	{
 		yoda = " not ";
 	}
-	else { yoda = ""}
+	else { yoda = "" }
 
 	// pick from lists, account for plurality
 	var valA = a[randBetween(a.length - 1)];
@@ -268,17 +302,22 @@ returns: nothing
 	var objC = c[randBetween(c.length - 1)];
 
 	var valC;
-	switch (objB.pluralInd)
+	switch (objB.pluralInd) // handle plurality of noun
 	{
 		case true:
-		  valC = objC.plural
+		  valC = objC.plural;
 		break;
 
 		default:
-		  valC = objC.sing
+		  valC = objC.sing;
 	}
 
-	var valD = d[randBetween(d.length - 1)];
+	var valD;
+	if randBetween(valDDenom - 1) == (valDDenom - 1)) // handle valD chance
+	{
+		valD = d[randBetween(d.length - 1)];
+	}
+	else { valD = ""; }
 
 	// pre-assembly tweaks
 	// fix double-negation
@@ -298,10 +337,12 @@ returns: nothing
 
 	// post-assembly tweaks
 	resStr = resStr.replace(" ,", ","); // space + ,
+	resStr = resStr.replace(" .", "."); // space + .
+	resStr = resStr.replace("  ", " "); // double space
 
 	// insert res into DOM
 	var resElem = document.getElementById("res");
-	resElem.textContent = resStr
+	resElem.textContent = resStr;
 }
 
 // insert first res on page load

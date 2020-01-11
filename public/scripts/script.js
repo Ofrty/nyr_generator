@@ -40,7 +40,11 @@ var a =
 var b =
 [
 	{
-		"val": 17,
+		"val": "",
+		"pluralInd": true
+	},
+	{
+		"val": "17",
 		"pluralInd": true
 	},
 	{
@@ -101,6 +105,14 @@ var b =
 	},
 	{
 		"val": "a smattering of",
+		"pluralInd": true
+	},
+	{
+		"val": "the",
+		"pluralInd": false
+	},
+	{
+		"val": "the",
 		"pluralInd": true
 	}
 ];
@@ -186,11 +198,20 @@ var c =
 	{
 		"sing": "marine invertebrate",
 		"plural": "marine invertebrates"
+	},
+	{
+		"sing": "DO metric",
+		"plural": "DO metrics"
+	},
+	{
+		"sing": "proposal in stage 6",
+		"plural": "proposals in stage 6"
 	}
 ];
 
 var d =
 [
+	"",
 	"between now and election day",
 	", just like momma used to",
 	" before the heat death of the universe",

@@ -258,7 +258,7 @@ var d =
 	"whether you like it or not",
 	"so well that Kim will write a song about it",
 	"and then take an apprentice",
-	", and stream it live for the world to see"
+	", and stream it live for the world to see",
 	"so that no one else ever has to",
 	", just in case",
 	"without regard for my own safety",

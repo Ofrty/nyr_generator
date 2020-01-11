@@ -313,7 +313,7 @@ returns: nothing
 	}
 
 	var valD;
-	if randBetween(valDDenom - 1) == (valDDenom - 1)) // handle valD chance
+	if (randBetween(valDDenom - 1) == (valDDenom - 1)) // handle valD chance
 	{
 		valD = d[randBetween(d.length - 1)];
 	}

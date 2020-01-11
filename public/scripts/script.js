@@ -203,13 +203,13 @@ var d =
 	"with pomp & circumstance",
 	"singlehandedly and with proper fervor",
 	"in a batch process",
-	"over escalating tensions",
+	"due to escalating tensions",
 	"sternly, but fairly",
 	"with my bare hands",
 	"while blindfolded",
 	", for kingdom and glory",
 	"wherever I please",
-	"uphill both ways"
+	"while moving uphill both ways"
 ];
 
 //  funcs

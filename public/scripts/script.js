@@ -1,6 +1,6 @@
-// chance vars: 1 / (val+1) chance
-var notDenom = 3; // chance of "will" -> "will not"
-var valDDenom = 2; // chance of final clause val D being applied
+// chance vars: 1 / (val-1) chance
+var notDenom = 4; // chance of "will" -> "will not"
+var valDDenom = 3; // chance of final clause val D being applied
 
 // source lists
 var a =
@@ -236,7 +236,6 @@ All characters are fictional, and any resemblance to real people is a coincidenc
 
 var d =
 [
-	"",
 	"between now and election day",
 	", just like momma used to",
 	" before the heat death of the universe",
@@ -272,15 +271,24 @@ var d =
 ];
 
 //  funcs
-function randBetween(maxNum)
-/* Generates a random number between 0 and arg1
+function randZeroToN(maxNum)
+/* Generates a random number between 0 and arg1. Does weak validation.
 
-@param maxNum integer - an integer greater than 1
+@param maxNum integer - an integer greater than 0
 
-returns: int
+returns: int if validated int, 0 if not.
 */
 {
-	return Math.round(Math.random() * maxNum);
+	var retVal;
+	
+	// validate that int is > 1. if not, then just return 0.
+	if (maxNum > 0)
+	{
+		retVal = Math.round(Math.random() * maxNum);
+	}
+	else { retVal = 0; }
+	
+	return retVal;
 }
 
 function genRes()
@@ -292,17 +300,17 @@ returns: nothing
 {
 	// pos or neg. 1/notDenom chance.
 	var yoda;
-	if (randBetween(notDenom - 1) == (notDenom - 1))
+	if (randZeroToN(notDenom - 1) == (notDenom - 1))
 	{
 		yoda = " not ";
 	}
 	else { yoda = "" }
 
 	// pick from lists, account for plurality
-	var valA = a[randBetween(a.length - 1)];
-	var objB = b[randBetween(b.length - 1)];
+	var valA = a[randZeroToN(a.length - 1)];
+	var objB = b[randZeroToN(b.length - 1)];
 	var valB = objB.val;  
-	var objC = c[randBetween(c.length - 1)];
+	var objC = c[randZeroToN(c.length - 1)];
 
 	var valC;
 	switch (objB.pluralInd) // handle plurality of noun
@@ -316,9 +324,9 @@ returns: nothing
 	}
 
 	var valD;
-	if (randBetween(valDDenom - 1) == (valDDenom - 1)) // handle valD chance
+	if (randZeroToN(valDDenom - 1) == (valDDenom - 1)) // handle valD chance
 	{
-		valD = d[randBetween(d.length - 1)];
+		valD = d[randZeroToN(d.length - 1)];
 	}
 	else { valD = ""; }
 

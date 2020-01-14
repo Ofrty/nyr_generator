@@ -23,3 +23,21 @@ body
 {
   font-size: 5vh;
 }
+
+footer
+{
+    position: fixed;
+    margin: auto auto 0 auto;
+    text-align: center;
+    font-size: 12pt;
+
+    /*how to stretch full screen width, but never have a horizontal scrollbar*/
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*************************************************************************/
+
+    background-color: #000022;
+    color: #6633ee;
+}

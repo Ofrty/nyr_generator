@@ -5,7 +5,6 @@ body
   background-size: cover;
   text-align: center;
   font-family: Georgia;
-  font-weight: bold;
   margin-top: 30px;
 }
 
@@ -16,7 +15,8 @@ body
   margin: auto;
   background: rgba(112, 128, 144, 0.25);
   color: whitesmoke;
-  font-size: 7vh; 
+  font-size: 7vh;
+  font-weight: bold;
 }
 
 #regen
@@ -38,6 +38,6 @@ footer
     bottom: 0;
     /*************************************************************************/
 
-    background-color: #000022;
+    background-color: rgba(34, 3, 0, .3);
     color: #6633ee;
 }

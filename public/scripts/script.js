@@ -141,10 +141,13 @@ var b =
 
 var c =
 [
+/* omitted 2020/01/14 to prevent harmless in-joke from being misinterpreted by others.
+All characters are fictional, and any resemblance to real people is a coincidence.
 	{
 		"sing": "Schmoe Schmandernach",
 		"plural": "Schmoe Schmandernachs"
 	},
+*/
 	{
 		"sing": "avocado tree",
 		"plural": "avocado trees"

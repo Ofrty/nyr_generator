@@ -255,7 +255,7 @@ All characters are fictional, and any resemblance to real people is a coincidenc
 	},
 	{
 		"sing": "Billy Idol's sneer",
-		"plural": "the many faces of Billy Idol"
+		"plural": "facial expressions of Billy Idol"
 	},
 	{
 		"sing": "email spammer pretending to be an AVP",

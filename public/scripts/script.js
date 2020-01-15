@@ -262,8 +262,8 @@ All characters are fictional, and any resemblance to real people is a coincidenc
 		"plural": "email spammers pretending to be AVPs"
 	},
 	{
-		"sing": "Joe Burrow's arm",
-		"plural": "Joe Burrow's arms"
+		"sing": "arm of Joe Burrow",
+		"plural": "arms of Joe Burrow"
 	},
 	{
 		"sing": "Department of Silly Walks",
@@ -355,10 +355,10 @@ returns: nothing
 	else { yoda = "" }
 
 	// pick from lists, account for plurality
-	var valA = a[randZeroToN(a.length - 1)];
-	var objB = b[randZeroToN(b.length - 1)];
+	var valA = a[randZeroToN(a.length)];
+	var objB = b[randZeroToN(b.length)];
 	var valB = objB.val;  
-	var objC = c[randZeroToN(c.length - 1)];
+	var objC = c[randZeroToN(c.length)];
 
 	var valC;
 	switch (objB.pluralInd) // handle plurality of noun
@@ -372,9 +372,9 @@ returns: nothing
 	}
 
 	var valD;
-	if (randZeroToN(valDDenom - 1) == (valDDenom - 1)) // handle valD chance
+	if (randZeroToN(valDDenom) == (valDDenom - 1)) // handle valD chance
 	{
-		valD = d[randZeroToN(d.length - 1)];
+		valD = d[randZeroToN(d.length)];
 	}
 	else { valD = ""; }
 

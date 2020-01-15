@@ -1,4 +1,4 @@
-// chance vars: 1 / (val-1) chance
+// chance vars: 1 / (xDenom) chance
 var notDenom = 4; // chance of "will" -> "will not"
 var valDDenom = 3; // chance of final clause val D being applied
 
@@ -40,7 +40,12 @@ var a =
 	"interpret",
 	"annotate",
 	"build an exact replica of",
-	"pay my respects to"
+	"pay my respects to",
+	"escalate",
+	"grasp",
+	"redact",
+	"visit",
+	"indulge"
 ];
 
 var b =
@@ -136,6 +141,18 @@ var b =
 	{
 		"val": "the last unaccounted-for",
 		"pluralInd": false
+	},
+	{
+		"val": "every single",
+		"pluralInd": false
+	},
+	{
+		"val": "seven-and-a-half",
+		"pluralInd": true
+	},
+	{
+		"val": "√-1",
+		"pluralInd": true
 	}
 ];
 
@@ -231,6 +248,34 @@ All characters are fictional, and any resemblance to real people is a coincidenc
 	{
 		"sing": "proposal in stage 6",
 		"plural": "proposals in stage 6"
+	},
+	{
+		"sing": "meticulously-arranged display of 1940s airplane models",
+		"plural": "meticulously-crafted 1940s airplane models"
+	},
+	{
+		"sing": "Billy Idol's sneer",
+		"plural": "the many faces of Billy Idol"
+	},
+	{
+		"sing": "email spammer pretending to be an AVP",
+		"plural": "email spammers pretending to be AVPs"
+	},
+	{
+		"sing": "Joe Burrow's arm",
+		"plural": "Joe Burrow's arms"
+	},
+	{
+		"sing": "Department of Silly Walks",
+		"plural": "Silly Walks (of the Department)"
+	},
+	{
+		"sing": "incomprehensible error log",
+		"plural": "incomprehensible error logs"
+	},
+	{
+		"sing": "acceptable use of Schadenfreude",
+		"plural": "enemies worthy of Schadenfreude"
 	}
 ];
 
@@ -267,7 +312,10 @@ var d =
 	"to raise money for charity",
 	"in the name of Odin",
 	", and I won't shave until it's finished",
-	"as a proxy for my greater ambitions"
+	"as a proxy for my greater ambitions",
+	"in compliance with GDPR",
+	"beyond the seas",
+	"from coast to coast"
 ];
 
 //  funcs
@@ -284,7 +332,7 @@ returns: int if validated int, 0 if not.
 	// validate that int is > 1. if not, then just return 0.
 	if (maxNum > 0)
 	{
-		retVal = Math.round(Math.random() * maxNum);
+		retVal = Math.floor(Math.random() * maxNum);
 	}
 	else { retVal = 0; }
 	
@@ -300,7 +348,7 @@ returns: nothing
 {
 	// pos or neg. 1/notDenom chance.
 	var yoda;
-	if (randZeroToN(notDenom - 1) == (notDenom - 1))
+	if (randZeroToN(notDenom) == (notDenom-1))
 	{
 		yoda = " not ";
 	}

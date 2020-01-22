@@ -45,7 +45,12 @@ var a =
 	"grasp",
 	"redact",
 	"visit",
-	"indulge"
+	"indulge",
+	"hit up",
+	"wax philosophical about",
+	"compose a symphony dedicated to",
+	"address the plight of",
+	"restore the crown to"
 ];
 
 var b =
@@ -276,6 +281,18 @@ All characters are fictional, and any resemblance to real people is a coincidenc
 	{
 		"sing": "acceptable use of Schadenfreude",
 		"plural": "enemies worthy of Schadenfreude"
+	},
+	{
+		"sing": "low-hanging fruit",
+		"plural": "low-hanging fruits"
+	},
+	{
+		"sing": "gift on-the-table",
+		"plural": "dollars on-the-table"
+	},
+	{
+		"sing": "untapped donor",
+		"plural": "untapped donors"
 	}
 ];
 
@@ -315,7 +332,10 @@ var d =
 	"as a proxy for my greater ambitions",
 	"in compliance with GDPR",
 	"beyond the seas",
-	"from coast to coast"
+	"from coast to coast",
+	"aggressively",
+	"without remorse",
+	", because Cold Stone said so"
 ];
 
 //  funcs

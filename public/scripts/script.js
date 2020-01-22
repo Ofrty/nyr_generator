@@ -18,7 +18,7 @@ var a =
 	"intensify",
 	"chase",
 	"binge watch",
-	"exercise",
+	"exercise with",
 	"paint",
 	"commit",
 	"liquidate",

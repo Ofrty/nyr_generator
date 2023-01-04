@@ -170,11 +170,11 @@ var b =
 	},
 	{
 		"val": "the last reigning",
-		"pluralInd": true
+		"pluralInd": false
 	},
 	{
 		"val": "the most pressing",
-		"pluralInd": true
+		"pluralInd": false
 	}
 ];
 
@@ -360,7 +360,8 @@ var d =
 	"at the weekly technical ad-hoc meeting",
 	"in the full ascend sandbox environment",
 	"by the next sprint meeting",
-	"before you can even ask about the level of effort"
+	"before you can even ask about the level of effort",
+	"while waiting for our integration software to recover from another crash"
 ];
 
 //  funcs

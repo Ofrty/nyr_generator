@@ -58,8 +58,11 @@ var a =
 	"look for defects in",
 	"push through QA",
 	"convert all data related to",
-	"thoroughly document",
-	"create a terribly confusing Visio document in order to describe"
+	"furiously document",
+	"create a terribly confusing Visio document in order to describe",
+	"complain to management about",
+	"design a project plan involving",
+	"perform a risk assessment on"
 ];
 
 var b =
@@ -283,10 +286,11 @@ All characters are fictional, and any resemblance to real people is a coincidenc
 		"sing": "email spammer pretending to be an AVP",
 		"plural": "email spammers pretending to be AVPs"
 	},
+	/* commented out 2023/01/04; no longer topical
 	{
 		"sing": "arm of Joe Burrow",
 		"plural": "arms of Joe Burrow"
-	},
+	},*/
 	{
 		"sing": "Department of Silly Walks",
 		"plural": "Silly Walks (of the Department)"
@@ -301,7 +305,7 @@ All characters are fictional, and any resemblance to real people is a coincidenc
 	},
 	{
 		"sing": "low-hanging fruit",
-		"plural": "low-hanging fruits"
+		"plural": "low-hanging fruit"
 	},
 	{
 		"sing": "gift on-the-table",
@@ -314,6 +318,10 @@ All characters are fictional, and any resemblance to real people is a coincidenc
 	{
 		"sing": "integration environment",
 		"plural": "integration environments"
+	},
+	{
+		"sing": "project implementation partner",
+		"plural": "project implementation partners"
 	}
 ];
 
@@ -352,7 +360,7 @@ var d =
 	", and I won't shave until it's finished",
 	"as a proxy for my greater ambitions",
 	"in compliance with GDPR",
-	"beyond the seas",
+	"somewhere beyond the seas",
 	"from coast to coast",
 	"aggressively",
 	"without remorse",
@@ -361,7 +369,10 @@ var d =
 	"in the full ascend sandbox environment",
 	"by the next sprint meeting",
 	"before you can even ask about the level of effort",
-	"while waiting for our integration software to recover from another crash"
+	"while waiting for the integration software to recover from another crash",
+	"before all of my accumulated PTO expires",
+	"long after all of my naïve date estimates have come and gone",
+	"in order to satisfy the weightiest goal on my annual performance appraisal"
 ];
 
 //  funcs

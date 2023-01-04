@@ -50,7 +50,16 @@ var a =
 	"wax philosophical about",
 	"compose a symphony dedicated to",
 	"address the plight of",
-	"restore the crown to"
+	"restore the crown to",
+	"purify",
+	"make a Click-Up task for",
+	"entomb in carbonite",
+	"deeply contemplate",
+	"look for defects in",
+	"push through QA",
+	"convert all data related to",
+	"thoroughly document",
+	"create a terribly confusing Visio document in order to describe"
 ];
 
 var b =
@@ -157,6 +166,14 @@ var b =
 	},
 	{
 		"val": "√-1",
+		"pluralInd": true
+	},
+	{
+		"val": "the last reigning",
+		"pluralInd": true
+	},
+	{
+		"val": "the most pressing",
 		"pluralInd": true
 	}
 ];
@@ -293,6 +310,10 @@ All characters are fictional, and any resemblance to real people is a coincidenc
 	{
 		"sing": "untapped donor",
 		"plural": "untapped donors"
+	},
+	{
+		"sing": "integration environment",
+		"plural": "integration environments"
 	}
 ];
 
@@ -335,7 +356,11 @@ var d =
 	"from coast to coast",
 	"aggressively",
 	"without remorse",
-	", because Cold Stone said so"
+	", because Cold Stone said so",
+	"at the weekly technical ad-hoc meeting",
+	"in the full ascend sandbox environment",
+	"by the next sprint meeting",
+	"before you can even ask about the level of effort"
 ];
 
 //  funcs
